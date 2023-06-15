@@ -44,7 +44,14 @@ After you run the chunk below successfully, a dataframe called climate_fever sho
 - You should click on it to view the dataframe
 
 ```{r, message=FALSE, warning=FALSE}
-climate_fever <- stream_in(file(here("data/climate-fever-dataset-r1.jsonl")))
+climate_fever <- stream_in(file("data/climate-fever-dataset-r1.jsonl"))
+View(climate_fever)
+test_data <- read_csv("data/test.csv")
+View(text_training_data)
+training_data <- read_csv("data/training.csv")
+View(training_data)
+validation_data <- read_csv("data/validation.csv")
+View(validation_data)
 ```
 
 
